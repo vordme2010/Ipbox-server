@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="styles/styles.css">
+       <title>IPBOX</title>
+    </head>
+    <body>
+       <div class="wrapper">
+            <div class="wrapper__additional">
+                <header class="header">
+                    <h1 class="header__title"><a href="index.html">ipbox</a></h1>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="marketplace.html" class="header__nav-link">marketplace</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="javascript:void(0)" class="header__nav-link">mint your NFT</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="javascript:void(0)" class="header__nav-link">create NFTIP</a>
+                        </li>
+                        <li class="header__nav-item header__nav-account">
+                            <a href="account.html" class="header__nav-link">0xaa0...08345</a>
+                        </li>
+                    </ul>
+                </header>
+                <main class="main">
+                    <ul class="main__nav">
+                        <li class="main__nav-item disabled filled">
+                            <a href="form1.html" class="main__nav-link">
+                            <span class="main__nav-num">1</span>
+                            Choose IP type
+                            </a>
+                           <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item disabled filled">
+                            <a href="form2.html" class="main__nav-link">
+                            <span class="main__nav-num">2</span>
+                            IP Settings
+                            </a>
+                            <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item enabled notFilled">
+                            <a href="javascript:void(0)" class="main__nav-link">
+                            <span class="main__nav-num">3</span>
+                            Verify or Establish
+                            </a>
+                            <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item disabled notFilled">
+                            <a href="form4.html" class="main__nav-link">
+                            <span class="main__nav-num">4</span>
+                            NFT settings & Submit
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="main__IPINFO">
+                        <h1 class="main__IP-title">Verify Or Establish Rights Over Your IP</h1>
+                        <h2 class="main__IP-subtitle">Before converting your IP into NFT we have to make sure<br>all the rights are reserved.</h2>
+                        <div class="main__IPINFO-line"></div>
+                        <div class="main__IPINFO-NFT">
+                            <h2 class="main__IPINFO-NFT-title">Choose Option:</h2>
+                            <div class="main__verify-choose">
+                                <h2 class="main__IP-title main__IP-title-choose">Establish</h2>
+                                <div lass="main__switch-choose">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label> 
+                                </div>
+                                <h2 class="main__IP-title main__IP-title-choose">Verify</h2>
+                            </div>
+                            <h2 class="main__IPINFO-NFT-title">Personal Data:</h2>
+                            <div class="main__IPINFO-NFT-text-container main__IPINFO-verify-text-container">
+                                <div class="main__IPINFO-NFT-item">
+                                    <h2 class="main__IPINFO-NFT-subtitle">First name:</h2>
+                                    <input type="" class="main__IPINFO-NFT-input" value="John">
+                                </div>
+                                <div class="main__IPINFO-NFT-item">
+                                    <h2 class="main__IPINFO-NFT-subtitle">Last name:</h2>
+                                    <input type="text" class="main__IPINFO-NFT-input" value="Woods">
+                                </div>
+                            </div>
+                            <div class="main__IPINFO-NFT-text-container main__IPINFO-verify-text-container">
+                                <div class="main__IPINFO-NFT-item">
+                                    <h2 class="main__IPINFO-NFT-subtitle">Your Email adress:</h2>
+                                    <input type="email" class="main__IPINFO-NFT-input" value="User@IPBOX.com">
+                                </div>
+                                <div class="main__IPINFO-NFT-item">
+                                    <h2 class="main__IPINFO-NFT-subtitle">Date of birth:</h2>
+                                    <input type="date" class="main__IPINFO-NFT-input" value="2001-06-23">
+                                </div>
+                            </div>
+                            <div class="main__IPINFO-FILE-container">
+                                <div class="main__IPINFO-FILE-droparea-container">
+                                    <div class="file-drop-area">
+                                        <span class="fake-btn">Upload your ID</span>
+                                        <span class="file-msg">or drag and drop file here</span>
+                                        <input class="file-input pdfID" id="myPdf" type="file">
+                                    </div>
+                                    <h2 class="main__IP-subtitle">Your identification document is necessary <br> to provide you the proof of ownership over your IP.</h2>
+                                </div>
+                                <div class="main__IPINFO-file-img-container">
+                                    <div class="main__IPINFO-file-img-fake main__IPINFO-ID-img-fake">
+                                        Your <br>
+                                        Identification <br>
+                                        Document
+                                    </div>
+                                    <p class="main__IPINFO-file-desc" id="file-name-fake" style="text-align: center; margin-bottom: 50px;">Your identification document <br> will appear here</p>
+                                    <div class="main__IPINFO-file-img main__IPINFO-ID-img hidden">
+                                        <canvas id="pdfViewer"></canvas>
+                                    </div>
+                                    <p class="main__IPINFO-file-desc main__IPINFO-ID-desc" id="file-name"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="main__IPINFO-NFT-checkbox main__IPINFO-verify-checkbox">
+                                <label class="container">
+                                    <p class="main__IPINFO-NFT-checkbox-text">I agree to the processing of personal data and confirm the identity of my IP.</p>
+                                    <input type="checkbox" onclick="checkInput(event)">
+                                    <p class="checkmark-input"></p>
+                                </label>
+                            </div>
+                            <div class="main__IPINFO-NFT-checkbox main__IPINFO-verify-checkbox">
+                                <label class="container">
+                                    <p class="main__IPINFO-NFT-checkbox-text">I am 18 years or older and agree the terms & conditions applicable.</p>
+                                    <input type="checkbox" onclick="checkInput(event)">
+                                    <p class="checkmark-input"></p>
+                                </label>
+                            </div>
+
+                            <div class="main__IPINFO-NFT-container">
+                                <div class="main__IPINFO-file-btn-container">
+                                    <div class="main__IP-btn-container main__IP-btn-container-1">
+                                        <div class="icon-arrow">
+                                            <lord-icon
+                                                src="https://cdn.lordicon.com/xhdhjyqy.json"
+                                                trigger="hover"
+                                                target="div.main__IP-btn-container-1"
+                                                colors="primary:#ffffff"
+                                                state="hover-1"
+                                                style="width:52px;height:52px">
+                                            </lord-icon>
+                                        </div>
+                                        <button class="main__IP-item-btn main__IP-item-btn-NFT">
+                                            <a href="form4.html" class="main__IP-itemt-btn-text main__IP-itemt-btn-text-NFT">Continue</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+       </div>
+       <noscript>You need to enable JavaScript to run IPOBOX app.</noscript>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+       <script src="scripts/jquery.js"></script>
+       <script src="libraries/sha256.js"></script>
+       <script src="scripts/form3.js"></script>
+       <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    </body>
+</html>

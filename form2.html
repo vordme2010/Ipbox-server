@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="styles/styles.css">
+       <title>IPBOX</title>
+    </head>
+    <body>
+       <div class="wrapper wrapper-form2">
+            <div class="wrapper__additional">
+                <header class="header">
+                    <h1 class="header__title"><a href="index.html">ipbox</a></h1>
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="marketplace.html" class="header__nav-link">marketplace</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="javascript:void(0)" class="header__nav-link">mint your NFT</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="javascript:void(0)" class="header__nav-link">create NFTIP</a>
+                        </li>
+                        <li class="header__nav-item header__nav-account">
+                            <a href="account.html" class="header__nav-link">0xaa0...08345</a>
+                        </li>
+                    </ul>
+                </header>
+                <main class="main">
+                    <ul class="main__nav">
+                        <li class="main__nav-item main__nav-item-type disabled filled">
+                            <a href="form1.html" class="main__nav-link">
+                            <span class="main__nav-num">1</span>
+                            Choose IP type
+                            </a>
+                           <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item enabled notFilled">
+                            <a href="javascript:void(0)" class="main__nav-link">
+                            <span class="main__nav-num">2</span>
+                            IP Settings
+                            </a>
+                            <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item main__nav-item-verify disabled notFilled">
+                            <a href="form3.html" class="main__nav-link">
+                            <span class="main__nav-num">3</span>
+                            Verify or Establish
+                            </a>
+                            <div class="main__nav-arrow"></div>
+                        </li>
+                        <li class="main__nav-item main__nav-item-submit disabled notFilled">
+                            <a href="form4.html" class="main__nav-link">
+                            <span class="main__nav-num">4</span>
+                            NFT settings & Submit
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="main__IPINFO">
+                        <h1 class="main__IP-title">Set-up Your NFT-Patent</h1>
+                        <h2 class="main__IP-subtitle">The following information will be used to create <br> a non-fungible token (NFT) within our blockchain network.</h2>
+                        <div class="main__IPINFO-line"></div>
+                        <div class="main__IPINFO-NFT">
+                            <h2 class="main__IPINFO-NFT-title">NFT Information:</h2>
+                            <div class="main__IPINFO-NFT-container">
+                                <div class="main__IPINFO-NFT-img-container">
+                                    <div class="main__IPINFO-NFT-settings-container">
+                                        <h2 class="main__IPINFO-NFT-subtitle">NFT Image:</h2>
+                                        <div class="avatar-wrapper">
+                                            <img class="profile-pic hidden" src=""/>
+                                            <div class="upload-button">
+                                                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="avatar-wrapper-ico">
+                                                <lord-icon
+                                                    src="https://cdn.lordicon.com/diyeocup.json"
+                                                    trigger="hover"
+                                                    target="div.avatar-wrapper"
+                                                    colors="primary:#ffffff"
+                                                    state="hover-1"
+                                                    style="width: 60px;height: 60px">
+                                                </lord-icon>
+                                            </div>
+                                            <input class="file-upload file-upload-img" type="file" accept="image/*"/>
+                                        </div>
+                                    </div>
+                                    <div class="main__IPINFO-NFT-settings-container">
+                                        <h2 class="main__IPINFO-NFT-subtitle">NFT Image Settings:</h2>
+                                        <div class="main__IPINFO-NFT-checkbox">
+                                            <label class="container">
+                                                <p class="main__IPINFO-NFT-checkbox-text">Use uploaded file's preview as your NFT Image.</p>
+                                                <input type="checkbox" onclick="checkInput(event)" class="uploadFilePreview">
+                                                <p class="checkmark-input"></p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="main__IP-subtitle">We use your NFT-Image to store and secure information about your IP,<br> which is encrypted inside using the hash code.</h2>
+                                <div class="main__IPINFO-NFT-text-container">
+                                    <div class="main__IPINFO-NFT-item">
+                                        <h2 class="main__IPINFO-NFT-subtitle">NFT Name:</h2>
+                                        <input type="text" class="main__IPINFO-NFT-input main__IPINFO-NFT-input-name">
+                                    </div>
+                                    <div class="main__IPINFO-NFT-item">      
+                                        <h2 class="main__IPINFO-NFT-subtitle">Outer Marketplace:</h2>
+                                        <select name="marketplaces" class="main__IPINFO-NFT-input" id="marketplaces">
+                                            <option value="openSea" selected>OpenSea</option>
+                                        </select>
+                                    </div>
+                                    <div class="main__IPINFO-NFT-item">
+                                        <h2 class="main__IPINFO-NFT-subtitle">Patent Description:</h2>
+                                        <textarea class="main__IPINFO-NFT-input main__IPINFO-NFT-textarea" id="output"></textarea>
+                                    </div>
+                                    <div class="main__IPINFO-NFT-item main__IPINFO-NFT-drop-item">
+                                        <h2 class="main__IPINFO-NFT-title">OR</h2>
+                                        <div class="file-drop-area file-drop-area-txt">
+                                            <span class="fake-btn">Upload .TXT File</span>
+                                            <span class="file-msg">or drag and drop file here</span>
+                                            <input class="file-input" id="inputfile" type="file";" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__IPINFO-NFT">
+                            <div class="main__IPINFO-title-area">
+                                <h2 class="main__IPINFO-NFT-title">Add Your File:</h2>
+                                <h2 class="main__IPINFO-NFT-title">Your PDF File:</h2>
+                            </div>
+                            <div class="main__IPINFO-FILE-container">
+                                <div class="main__IPINFO-FILE-droparea-container">
+                                    <div class="file-drop-area">
+                                        <span class="fake-btn">Upload .PDF file</span>
+                                        <span class="file-msg">or drag and drop file here</span>
+                                        <input class="file-input" id="myPdf" type="file">
+                                    </div>
+                                    <h2 class="main__IPINFO-NFT-title">File Settings:</h2>
+                                    <h2 class="main__IPINFO-NFT-subtitle">IPBOX Visibility:</h2>
+                                    <select name="marketplaces" class="main__IPINFO-NFT-input main__IPINFO-NFT-input-visibility" id="marketplaces">
+                                        <option value="visible" selected>Visible</option>
+                                        <option value="invisible">Invisible</option>
+                                    </select>
+                                    <h2 class="main__IPINFO-NFT-subtitle">Your Unique SSH Hash-Code:</h2>
+                                    <input class="main__IPINFO-NFT-input main__IPINFO-NFT-input-ssh" id="SSH-input" type="text" style="width: 325px;" readonly="readonly" title="Copy" placeholder="File not attached."/>
+                                </div>
+                                <div class="main__IPINFO-file-img-container">
+                                    <div class="main__IPINFO-file-img-fake">
+                                        Your <br>
+                                        PDF <br>
+                                        File
+                                    </div>
+                                    <p class="main__IPINFO-file-desc" id="file-name-fake">Your file will appear here</p>
+                                    <div class="main__IPINFO-file-img hidden">
+                                        <canvas id="pdfViewer"></canvas>
+                                    </div>
+                                    <p class="main__IPINFO-file-desc" id="file-name"></p>
+                                </div>
+                            </div>
+                            <div class="main__IPINFO-file-btn-container">
+                                <div class="main__IP-btn-container main__IP-btn-container-1">
+                                    <div class="icon-arrow">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/xhdhjyqy.json"
+                                            trigger="hover"
+                                            target="div.main__IP-btn-container-1"
+                                            colors="primary:#ffffff"
+                                            state="hover-1"
+                                            style="width:52px;height:52px">
+                                        </lord-icon>
+                                    </div>
+                                    <button class="main__IP-item-btn main__IP-item-btn-NFT form2-btn">
+                                        <a href="form3.html" class="main__IP-itemt-btn-text main__IP-itemt-btn-text-NFT">Continue</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+       </div>
+       <noscript>You need to enable JavaScript to run IPOBOX app.</noscript>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+       <script src="scripts/jquery.js"></script>
+       <script src="libraries/sha256.js"></script>
+       <script src="scripts/form2.js"></script>
+       <script src="scripts/storeData.js"></script>
+       <script src="scripts/pdfToHex.js"></script>
+       <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    </body>
+</html>
