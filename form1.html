@@ -1,140 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="styles/styles.css">
-       <title>IPBOX</title>
-    </head>
-    <body>
-       <div class="wrapper">
-            <div class="wrapper__additional">
-                <header class="header">
-                    <h1 class="header__title"><a href="index.html">ipbox</a></h1>
-                    <ul class="header__nav">
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-link">home</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="marketplace.html" class="header__nav-link">marketplace</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="javascript:void(0)" class="header__nav-link">mint your NFT</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="javascript:void(0)" class="header__nav-link">create NFTIP</a>
-                        </li>
-                        <li class="header__nav-item header__nav-account">
-                            <a href="account.html" class="header__nav-link">0xaa0...08345</a>
-                        </li>
-                    </ul>
-                </header>
-                <main class="main">
-                    <ul class="main__nav">
-                        <li class="main__nav-item enabled notFilled">
-                            <a href="javascript:void(0)" class="main__nav-link">
-                            <span class="main__nav-num">1</span>
-                            Choose IP type
-                            </a>
-                           <div class="main__nav-arrow"></div>
-                        </li>
-                        <li class="main__nav-item disabled notFilled">
-                            <a href="form2.html" class="main__nav-link">
-                            <span class="main__nav-num">2</span>
-                            IP Settings
-                            </a>
-                            <div class="main__nav-arrow"></div>
-                        </li>
-                        <li class="main__nav-item disabled notFilled">
-                            <a href="form3.html" class="main__nav-link">
-                            <span class="main__nav-num">3</span>
-                            Verify or Establish
-                            </a>
-                            <div class="main__nav-arrow"></div>
-                        </li>
-                        <li class="main__nav-item disabled notFilled">
-                            <a href="form4.html" class="main__nav-link">
-                            <span class="main__nav-num">4</span>
-                            NFT settings & Submit
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="main__IP">
-                        <h1 class="main__IP-title">Select Your Intellectual Property</h1>
-                        <h2 class="main__IP-subtitle">The following information will be used to create <br> a non-fungible token (NFT) within our blockchain network.</h2>
-                        <div class="main__IP-container">
-                            <div class="main__IP-item main__IP-item-1" id="patent">
-                                <div class="main__IP-logo">
-                                    <h2 class="main__IP-item-title">Patent</h2>
-                                    <div class="main__IP-logo-img">
-                                        <img src="styles/images/certificate.png" alt="patent" width="27px" height="27px">
-                                    </div>
-                                </div>
-                                <div class="main__IP-item-inner">
-                                    <h3 class="main__IP-item-subtitle">Info</h3>
-                                    <p class="main__IP-item-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a sapiente beatae iusto accusamus sint perferendis unde, reprehenderit 
-                                    </p>
-                                    <div class="main__IP-btn-container main__IP-btn-container-1">
-                                        <div class="icon-arrow">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/xhdhjyqy.json"
-                                                trigger="hover"
-                                                target="div.main__IP-btn-container-1"
-                                                colors="primary:#666666"
-                                                state="hover-1"
-                                                style="width:52px;height:52px">
-                                            </lord-icon>
-                                        </div>
-                                        <button class="main__IP-item-btn">
-                                            <a href="form2.html" class="main__IP-itemt-btn-text">Continue</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main__IP-item main__IP-item-2" id="research">
-                                <div class="main__IP-logo">
-                                    <h2 class="main__IP-item-title">Research</h2>
-                                    <div class="main__IP-logo-img">
-                                        <img src="styles/images/search.png" alt="patent" width="30px" height="30px">
-                                    </div>
-                                </div>
-                                <div class="main__IP-item-inner">
-                                    <h3 class="main__IP-item-subtitle">Info</h3>
-                                    <p class="main__IP-item-info">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis molestias aspernatur sunt, neque mollitia earum fugit? 
-                                    </p>
-                                    <div class="main__IP-btn-container main__IP-btn-container-2">
-                                        <div class="icon-arrow">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/xhdhjyqy.json"
-                                                trigger="hover"
-                                                target="div.main__IP-btn-container-2"
-                                                colors="primary:#666666"
-                                                state="hover-1"
-                                                style="width:52px;height:52px">
-                                            </lord-icon>
-                                        </div>
-                                        <button class="main__IP-item-btn">
-                                            <a href="form2.html" class="main__IP-itemt-btn-text">Continue</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <h2 class="main__IP-footer-subtitle">
-                            Coming Soon...
-                        </h2> -->
-                    </div>
-                </main>
-            </div>
-       </div>
-       <noscript>You need to enable JavaScript to run IPOBOX app.</noscript>
-       <script src="scripts/jquery.js"></script>
-       <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>IPBOX</title>
+</head>
+<body>
+    <header></header>
+    <div id="main">
+          <form name="frmConvert" action="">
+            File: 
+            <input type="file" name="fileinput" onchange='pdfToText.openFile(event)' /> or
+            <span id="drop_zone" ondrop="pdfToText.drop_handler(event);" ondragover="pdfToText.dragover_handler(event);" ondragend="pdfToText.dragend_handler(event);" style="border: 15px solid darkgray; text-align:center; vertical-align:middle;">
+              <strong>drop file here</strong>
+            </span>       
+            </p>        
+    
+                  </p>		  
+                    <p>Output:</p>
+                    <p>
+                    <textarea name="ed_output" rows="10" cols="87" style="width: 700px;"></textarea>				
+                    <br>
+                    <br>
+                    <button type="button" name="btnCopyOutputToClipboard" id=""btnCopyOutputToClipboard" onclick="pdfToText.copyOutputToClipboard()">Copy output to clipboard</button>
+                    </p>			    
+                </form>
+                <div id="qrcode"></div>
+      </div>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script type="text/javascript">
+      new QRCode(document.getElementById("qrcode"), window.location.href);
+    </script>
+    <script src="scripts/pdfToHex.js"></script>
+</body>
 </html>
